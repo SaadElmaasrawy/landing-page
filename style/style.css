@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+/*  body styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../images/bg-intro-desktop.png');
+    background-color: hsl(0, 100%, 74%);
+}
+
+/* container styles */
+
+.container {
+    display: flex;
+    width: 80%;
+    margin: 10% auto;
+}
+
+/* left side styles */
+
+.left {
+    color: #ffffff;
+    flex:1;
+    margin-top: 15%;
+}
+
+.left h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.left p {
+    margin-top: 20px ;
+    font-size: 16px;
+}
+
+
+/* right side styles */
+
+.right {
+    flex: 1;;
+}
+
+.right-head {
+    color: #ffffff;
+    font-size: 14px;
+    background-color: hsl(248, 32%, 49%);
+    height: 50px;
+    width: 80%;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 2px 6px 2px hsl(249, 10%, 26%);
+}
+
+.right-head p {
+    padding: 13px;
+}
+
+.days {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    background-color: #ffffff;
+    height: 400px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 6px 2px hsl(249, 10%, 26%);
+}
+
+.right-content button, .right-content input {
+    width: 80%;
+    margin: auto;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 20px;
+}
+
+::placeholder {
+    opacity: 40%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #000;
+}
+
+.right-content button {
+    background-color: hsl(154, 59%, 51%);
+    color: #ffffff;
+    border: none;
+    box-shadow: 2px 2px 2px hsl(249, 10%, 26%);
+    font-size: 16px;
+    text-align: center;
+    width: 85%;
+}
+
+.p {
+    display: inline;
+    font-size:10px;
+    font-weight: 500;
+    margin: auto;
+}
+
+.normal {
+    opacity: 40%;
+
+}
+
+.red {
+    color:  hsl(0, 100%, 74%);
+    cursor: pointer;
+    opacity: 100%;
+}
+
+/* mobile version */
+
+@media only screen and (max-width: 600px) {
+
+    .body{
+        background-image: url('../images/bg-intro-mobile.png');
+        background-size: cover;
+    }
+    .container {
+        flex-direction: column;
+    }
+
+    .left h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+    .left p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .right {
+        margin-top: 80px;
+    }
+    .right-head {
+        height: 100px;
+        width: 95%;
+    }
+    .right-head p {
+        width: 56%;
+        text-align: center;
+        margin: auto;
+        padding-top: 25px;
+    }
+
+    .right-content {
+        width: 90%;
+    }
+
+}
